@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Outfit, sans-serif;
+  font-family: 1rem;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsl(30, 10%, 34%);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(29, 51%, 91%);
+}
+
+.card {
+  width: 600px;
+  background-color: white;
+  padding: 2%;
+  margin: 5%;
+  border-radius: 1rem;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+h1 {
+  font-family: Young Serif;
+  font-weight: 400;
+  color: black;
+  font-size: 2.2rem;
+}
+p {
+  font-family: Outfit;
+  color: hsl(30, 10%, 34%);
+}
+h2 {
+  font-family: Young Serif;
+  font-weight: 400;
+  color: hsl(332, 51%, 32%);
+}
+h3 {
+  font-family: Young Serif;
+  font-weight: 500;
+  margin: 0;
+  color: hsl(332, 51%, 32%);
+}
+.preparation {
+  padding: 0.5em;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em;
+}
+.nutrition-table {
+  color: hsl(332, 51%, 32%);
+  font-weight: 500;
+}
+
+tbody:not(:first-child) {
+  border-top: 4px dashed hsl(332, 51%, 32%);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .recipe {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
