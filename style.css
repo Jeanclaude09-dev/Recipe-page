@@ -1,8 +1,12 @@
+*,
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Outfit, sans-serif;
-  font-family: 1rem;
 }
 
 main {
@@ -67,7 +71,14 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 1em;
+  padding-right: 1rem;
 }
+
+table td {
+  padding: 0.5em 0 0.5em 0.5em;
+  border-bottom: 1px solid hsl(30, 10%, 34%);
+}
+
 .nutrition-table {
   color: hsl(332, 51%, 32%);
   font-weight: 500;
