@@ -3,10 +3,18 @@ html {
   box-sizing: border-box;
 }
 
+:root {
+  --font-primary: "Outfit", sans-serif;
+  --font-secondary: "Young Serif", serif;
+  --color-primary: rgb(123, 40, 79);
+  --color-secondary: rgb(95, 87, 78);
+  --color-background: rgb(244, 232, 220);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Outfit, sans-serif;
+  font-family: var(--font-primary);
 }
 
 main {
@@ -16,7 +24,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: hsl(30, 10%, 34%);
+  color: var(--color-secondary);
 }
 
 .container {
@@ -26,7 +34,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: hsl(29, 51%, 91%);
+  background-color: var(--color-background);
 }
 
 .card {
@@ -47,19 +55,19 @@ h1 {
   font-size: 2.2rem;
 }
 p {
-  font-family: Outfit;
-  color: hsl(30, 10%, 34%);
+  font-family: var(--font-primary);
+  color: var(--color-secondary);
 }
 h2 {
   font-family: Young Serif;
   font-weight: 400;
-  color: hsl(332, 51%, 32%);
+  color: var(--color-primary);
 }
 h3 {
-  font-family: Young Serif;
+  font-family: "Young Serif";
   font-weight: 500;
   margin: 0;
-  color: hsl(332, 51%, 32%);
+  color: var(--color-primary);
 }
 .preparation {
   padding: 0.5em;
@@ -70,22 +78,17 @@ h3 {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1em;
   padding-right: 1rem;
 }
 
 table td {
   padding: 0.5em 0 0.5em 0.5em;
-  border-bottom: 1px solid hsl(30, 10%, 34%);
+  border-bottom: 1px solid var(--color-secondary);
 }
 
 .nutrition-table {
-  color: hsl(332, 51%, 32%);
+  color: var(--color-primary);
   font-weight: 500;
-}
-
-tbody:not(:first-child) {
-  border-top: 4px dashed hsl(332, 51%, 32%);
 }
 
 @media (max-width: 600px) {
